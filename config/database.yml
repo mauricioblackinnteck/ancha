@@ -7,8 +7,8 @@
 default: &default
   adapter: postgresql
   encoding: unicode
-  username: 
-  password:
+  username: jurgen
+  password: 3210
 
 development:
   <<: *default
@@ -24,5 +24,5 @@ test:
 production:
   <<: *default
   database: ancha_production
-  username: 
-  password: <%= ENV['BOOKSTORE_DATABASE_PASSWORD'] %>
+  username: jurgen
+  password: 3210
