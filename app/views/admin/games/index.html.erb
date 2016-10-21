@@ -21,9 +21,13 @@
         <td><%= game.url %></td>
         <td><%= game.image %></td>
         <td><%= link_to 'Show', game %></td>
+        <td><%= link_to 'Edit', edit_admin_game_path(game) %></td>
       </tr>
     <% end %>
   </tbody>
 </table>
 
 <br>
+
+
+<%= link_to 'New Game', new_admin_game_path %>
