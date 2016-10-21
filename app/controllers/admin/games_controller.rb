@@ -1,4 +1,4 @@
-class Admin::GamesController < ApplicationController
+class Admin::GamesController < Admin::BaseController
   before_action :set_game, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_user!
 
