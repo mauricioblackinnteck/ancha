@@ -58,9 +58,11 @@
         <div class="navbar-collapse collapse navbar-responsive-collapse">
           <ul class="nav navbar-nav">
             <li><%= link_to "Games", games_path %></li>
-            <% if current_user.is_admin? %>
-            	<li><%= link_to "Admin Panel", admin_games_path %></li>
-          	<% end %>
+            <% if user_signed_in? %>
+              <% if current_user.is_admin? %>
+              	<li><%= link_to "Admin Panel", admin_games_path %></li>
+            	<% end %>
+            <% end %>
           </ul>
         </div>
       </div>
