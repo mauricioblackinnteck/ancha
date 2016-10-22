@@ -10,6 +10,7 @@
       <p>Currently waiting confirmation for: <%= resource.unconfirmed_email %></p>
     <% end %>
     
+    <%= image_tag @user.avatar %>
     <%= f.input :avatar %>
     <%= f.input :gamertag %>
     <%= f.input :bio, as: :text %>

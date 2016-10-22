@@ -2,5 +2,9 @@
 
 <%= render 'form', game: @game %>
 
+<div class="field">
+	<%= render "pictures/show", picturable_type: "Game", picturable_id: @game.id, pictures: @game.pictures %>
+</div>
+
 <%= link_to 'Show', @game %> |
 <%= link_to 'Back', games_path %>

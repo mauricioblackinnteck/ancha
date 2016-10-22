@@ -29,6 +29,7 @@ gem 'jbuilder', '~> 2.5'
 
 gem 'devise'
 gem "twitter-bootstrap-rails"
+gem 'carrierwave'
 gem "simple_form"
 
 # Use Capistrano for deployment
